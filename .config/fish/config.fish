@@ -8,6 +8,9 @@ alias la='eza -a --color=always --group-directories-first --icons' # all files a
 alias ll='eza -l --color=always --group-directories-first --icons' # long format
 alias lt='eza -aT --color=always --group-directories-first --icons' # tree listing
 
+# replace cat with cat
+alias cat='bat'
+
 # Navigation
 alias cdd='cd ~/vault'
 
