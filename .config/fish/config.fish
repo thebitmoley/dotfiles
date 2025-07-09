@@ -4,8 +4,8 @@ end
 
 # Replace ls with eza
 alias ls='eza -al --color=always --group-directories-first --icons' # preferred listing
-alias la='eza -a --color=always --group-directories-first --icons'  # all files and dirs
-alias ll='eza -l --color=always --group-directories-first --icons'  # long format
+alias la='eza -a --color=always --group-directories-first --icons' # all files and dirs
+alias ll='eza -l --color=always --group-directories-first --icons' # long format
 alias lt='eza -aT --color=always --group-directories-first --icons' # tree listing
 
 # Navigation
@@ -15,3 +15,6 @@ alias cdd='cd ~/vault'
 alias vi='nvim'
 alias vim='nvim'
 alias v='nvim .'
+
+# launch starship
+starship init fish | source
