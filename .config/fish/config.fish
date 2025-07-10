@@ -19,5 +19,8 @@ alias vi='nvim'
 alias vim='nvim'
 alias v='nvim .'
 
+# launch zoxide
+zoxide init fish | source
+
 # launch starship
 starship init fish | source
