@@ -20,3 +20,8 @@ vim.keymap.set('n', '<leader>vh', '<cmd>split<CR>')
 -- telescope searching
 vim.keymap.set('n', '<leader>ss', '<cmd>Telescope live_grep<CR>')
 vim.keymap.set('n', '<leader>sf', '<cmd>Telescope find_files<CR>')
+
+-- lsp handling
+vim.keymap.set('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>')
+vim.keymap.set('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>')
+vim.keymap.set('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>') 
