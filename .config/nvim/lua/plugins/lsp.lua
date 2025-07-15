@@ -1,11 +1,9 @@
 return {
+  { 'mason-org/mason.nvim', opts = {} },
+
   {
-        "neovim/nvim-lspconfig",
-        config = function()
-            -- LSP configuration
-            local lspconfig = require("lspconfig")
-            lspconfig.rust_analyzer.setup{}
-            lspconfig.lua_ls.setup{}
-        end
-  }
+    'mason-org/mason-lspconfig.nvim',
+    dependencies = { 'neovim/nvim-lspconfig' },
+    opts = {}
+  },
 }
